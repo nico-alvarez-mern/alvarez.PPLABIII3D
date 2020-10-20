@@ -1,0 +1,78 @@
+/* Config Base */
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    position: fixed;
+    background-color: #d3d3d3;
+}
+h1{
+    font-size: 24px;
+}
+h2{
+    font-weight: 200;
+}
+form{
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #e77777;
+}
+input {
+    padding: 5px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+fieldset{
+    margin-top: 15px;
+    border: 1px solid black;
+}
+thead{
+    font-size: 20px;
+}
+tbody{
+    font-size: 18px;
+}
+th,td{
+    border: 1px solid black;
+}
+/* Utilis */
+.container{
+    display: flex;
+    justify-content: center;
+}
+.t-center{
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.j-between {
+    justify-content: space-between;
+}
+
+/* components */
+.form{
+    flex-basis: calc(25% - 10px);
+}
+.container-table{
+    flex-basis: calc(75% - 10px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #4888e9;
+    color: white;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+fieldset .field{
+    flex-direction: row;
+}
+.table{
+    padding: 20px;
+}
+.hidden{
+    display: none;
+}

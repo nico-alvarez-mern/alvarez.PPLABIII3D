@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Practicar Examen</title>
+</head>
+<body>
+    <h1 class="t-center">Examen Laboratorio III</h1>
+    <div class="container">
+        <form class="form">
+            <div class="field">
+                <label for="nombre">Nombre: </label>
+                <input type="text" placeholder="nombre" id="nombre" name="nombre">
+            </div>
+            <div class="field">
+                <label for="apellido">Apellido: </label>
+                <input type="text" placeholder="apellido" id="apellido" name="apellido">
+            </div>
+            <div class="field">
+                <label for="email">Email: </label>
+                <input type="text" placeholder="email" id="email" name="email">
+            </div>
+            <fieldset>
+                    <legend>Genero</legend>
+                    <div class="field">
+                        <label for="genero">Masculino: </label>
+                        <input type="radio" id="masculino" name="genero">
+                    </div>
+                    <div class="field">
+                        <label for="genero">Femenino: </label>
+                        <input type="radio" id="femenino" name="genero">
+                    </div>
+            </fieldset>
+        </form>
+        <div class="container-table">
+            <h2 class="t-center">Tabla de personas</h2>
+            <table class="table" id="myTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                        <th>Genero</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
