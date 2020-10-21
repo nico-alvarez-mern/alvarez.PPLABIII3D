@@ -8,7 +8,7 @@ export const completeForm = (id)=>{
     form.descripcion.value = element.descripcion;
     form.precio.value = element.precio;
     form.puertas.value = element.num_puertas;
-    form.kilometros.value = element.num_KMs;
+    form.kilometros.value = element.num_KMS;
     form.potencia.value = element.potencia;
     if(element.transaccion === 'venta'){
         form.venta.checked = true;

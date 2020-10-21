@@ -31,6 +31,8 @@ export const handleSave = ()=>{
     if(selected){
         newItem.id = selected.id;
         deleteItem( selected.id );
+        const divBtns = document.getElementById('btns');
+        divBtns.classList.add('hidden');
     }else{
         newItem.id = localStorage.getItem('next-id');
     }
