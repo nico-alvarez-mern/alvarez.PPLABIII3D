@@ -7,47 +7,87 @@
     <title>Practicar Examen</title>
 </head>
 <body>
-    <h1 class="t-center">Examen Laboratorio III</h1>
-    <div class="container">
-        <form class="form">
-            <div class="field">
-                <label for="nombre">Nombre: </label>
-                <input type="text" placeholder="nombre" id="nombre" name="nombre">
-            </div>
-            <div class="field">
-                <label for="apellido">Apellido: </label>
-                <input type="text" placeholder="apellido" id="apellido" name="apellido">
-            </div>
-            <div class="field">
-                <label for="email">Email: </label>
-                <input type="text" placeholder="email" id="email" name="email">
-            </div>
+    <header class="navbar">
+        <img class="logo" src="./assets/logo-principal.png" alt="logo principal">
+        <nav class="nav-container">
+            <a href="#">Nosotros</a>
+            <a href="#">Anuncios</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+        </nav>    
+    </header>
+    <h1>Administracion</h1>
+    <div class="banner"></div>
+    <form id="myForm">
+        <div class="container-form">
             <fieldset>
-                    <legend>Genero</legend>
+                <legend>Informacion del anuncio</legend>
+                <div class="field">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" name="titulo" id="titulo" placeholder="titulo">
+                </div>
+                <fieldset class="radios">
+                    <legend>Transaccion</legend>
                     <div class="field">
-                        <label for="genero">Masculino: </label>
-                        <input type="radio" id="masculino" name="genero">
+                        <label for="venta">Venta</label>
+                        <input type="radio" name="transaccion" id="venta" checked>
                     </div>
                     <div class="field">
-                        <label for="genero">Femenino: </label>
-                        <input type="radio" id="femenino" name="genero">
+                        <label for="alquiler">Alquiler</label>
+                        <input type="radio" name="transaccion" id="alquiler">
                     </div>
+                </fieldset>
+                <div class="field">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" name="descripcion" id="descripcion" placeholder="descripcion">
+                </div>
+                <div class="field">
+                    <label for="precio">precio</label>
+                    <input type="text" name="precio" id="precio" placeholder="precio">
+                </div>
+                <div class="container-fields">
+                    <img class="icon" src="./assets/puertas.svg" alt="icono puertas">
+                    <input type="text" name="puertas" id="puertas" placeholder="puertas">
+                    <img class="icon" src="./assets/kmh.svg" alt="icono km">
+                    <input type="text" name="kilometros" id="kilometros" placeholder="KMs">
+                    <img class="icon" src="./assets/potencia.svg" alt="icono potencia">
+                    <input type="text" name="potencia" id="potencia" placeholder="potencia">
+                </div>
             </fieldset>
-        </form>
-        <div class="container-table">
-            <h2 class="t-center">Tabla de personas</h2>
-            <table class="table" id="myTable">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Edad</th>
-                        <th>Genero</th>
-                    </tr>
-                </thead>
-            </table>
         </div>
+        <div class="container-buttoms">
+            <button id="btnGuardar" type="button" class="btnGuardar">Guardar</button>
+            <div id="btns" class="hidden">
+                <button id="btnEliminar" type="button" class="btnEliminar">Eliminar</button>
+                <button id="btnCancelar" type="button" class="btnCancelar">Cancelar</button>
+            </div>
+        </div>
+    </form>
+    <div class="table-container">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>titulo</th>
+                    <th>transaccion</th>
+                    <th>descripcion</th>
+                    <th>precio</th>
+                    <th>num_puertas</th>
+                    <th>num_KMs</th>
+                    <th>potencia</th>
+                </tr>
+            </thead>
+        </table>
     </div>
+    <footer class="navbar">
+        <nav class="nav-container">
+            <a href="#">Nosotros</a>
+            <a href="#">Anuncios</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <p>Todos los derechos reservados &copy;</p>   
+    </footer>
 
     <script src="./js/index.js" type="module"></script>
 </body>
